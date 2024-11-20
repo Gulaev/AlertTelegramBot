@@ -15,8 +15,6 @@ type AlertResponse struct {
 
 var apiToken = os.Getenv("ALERT_TOKEN")
 
-//"6bc5a101ac248e9e8d86f331b55826a74cd10e72ab2203"
-
 // GetActiveAlerts fetches active alerts from the API
 func GetActiveAlerts() (*AlertResponse, error) {
 	url := "https://api.alerts.in.ua/v1/alerts/active.json"
